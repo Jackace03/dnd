@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Basking Shark</name>
+		<description>Basking Shark Sharkin Subrace.</description>
+		<update version="0.1.1">
+			<file name="race-baskingsharksharkin.xml" url="https://github.com/Jackace03/dnd/blob/main/race-baskingsharksharkin.xml" />
+		</update>
+	</info>
+	
+	<element name="Basking Shark Sharkin" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_BASKINGSHARK_SHARKIN">
+		<supports>Sharkin</supports>
+		<description>
+			<p>Very large docile sharkin race.</p>
+			<p class="indent"><strong><em>Size. </em></strong>Basking Sharkin can grow to be between 10 to 13 feet tall and weigh up too 1.9 to 2.6 t. Your size is Large.</p>
+			<p class="indent"><strong><em>Tough Hide. </em></strong>You gain a +1 bonus to your AC, and you have resistance to non-magical piercing damage.</p>
+            <p class="indent"><strong><em>Huge Liver. </em></strong>You have resistance to poison damage, as well as advantage on saving throws against being poisoned.
+            <p class="indent"><strong><em>Vicious Bite.</em></strong>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d8 bludgeoning damage, but grows to 2d8 at 5th level, 3d8 at 10th level, and 4d8 at 20th level.</p>
+        </description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_LARGE" />
+            <stat name="ac:misc" value="1" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUB_RACE_BASKINGSHARK_SHARKIN_VICIOUS_BITE" />
+		</rules>
+	</element>
+
+	<element name="Vicious Bite" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_BASKINGSHARK_SHARKIN_VICIOUS_BITE">
+		<h5>Vicious Bite</h5>
+        <description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d8 piercing damage, but grows to 2d8 at 5th level, 3d8 at 10th level, and 4d8 at 20th level.</p>
+		</description>
+		<sheet>
+			<description>Your vicious bite does {{vicious-bite:dice count}}d8+{{strength:modifier}} damage. This is a natural weapon attack and you use your Strength modifier for its attack rolls.</description>
+		</sheet>
+        <rules>
+            <stat name="vicious-bite:dice count" value="1" level="1" />
+            <stat name="vicious-bite:dice count" value="2" level="5" />
+            <stat name="vicious-bite:dice count" value="3" level="10" />
+            <stat name="vicious-bite:dice count" value="4" level="20" />
+        </rules>
+	</element>
+</elements>
