@@ -19,7 +19,7 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-            <stat name="speed:swim" value="30" />
+            <stat name="innate speed:swim" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_HOMEBREW_SUB_RACE_BLUESHARK_SHARKIN_VICIOUS_BITE" />
 		</rules>
 	</element>
