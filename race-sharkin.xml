@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sharkin</name>
+	</info>
+    <element name="Sharkin" type="Race" source="Homebrew" id="ID_WOTC_HOMEBREW_RACE_SHARKIN">
+        <description>
+            <p>In an era long before mortal reckoning, the Living Gate, the only bastion of safety against the nightmare creatures of the Far Realm, was torn apart in an unimaginable cosmic catastrophe.</p>
+            <p>You weren’t there, of course. It was well before your time.</p>
+            <p>Still, its shards make up your body. Its ancient thoughtforms shape your mind. And your life carries on its legacy.</p>
+            <p>Shardminds are a race of psionic crystal, constructed from the remnants of the last safeguard against the Far Realms. Strange and unearthly, shardminds are nevertheless guided by an unerring purpose: to cleanse the world of aberrations, and to make the multiverse once again safe from the madness that plagues it.</p>
+            <p>Do you quest after the secrets of the multiverse, hoping to reconstruct the Living Gate? Do you seek to become as powerful as you can, to be a better safeguard than the Gate ever was? Or do you hunt down any that threaten the realm, and those that stand in the way of the Gate’s reconstruction?</p>
+            <p>Your life is your own, and your destiny is clear as crystal.</p>
+        </description>
+    </element>
+</elements>
