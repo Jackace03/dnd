@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Goblin Shark</name>
+		<description>Goblin Shark Sharkin Subrace.</description>
+		<update version="0.1.1">
+			<file name="race-goblinsharksharkin.xml" url="https://github.com/Jackace03/dnd/blob/main/race-goblinsharksharkin.xml" />
+		</update>
+	</info>
+	
+	<element name="Goblin Shark Sharkin" type="Sub Race" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN">
+		<supports>Sharkin</supports>
+		<description>
+			<p>Very creepy and dangerous sharkin race.</p>
+			<p class="indent"><strong><em>Size. </em></strong>Goblin Sharkin can grow to be between 5 to 6 feet tall and weigh up too 190 to 270 lbs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Ampullae of Lorenzini. </em></strong>You have proficiency in the Investigation skill. In addition, you have advantage on Perception and Investigation checks.</p>
+            <p class="indent"><strong><em>Superior Darkvision. </em></strong>You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Vicious Bite.</em></strong>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 bludgeoning damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</p>
+        </description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_TINY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_AMPULLAE_OF_LORENZINI" />
+			<grant type="Racial Trait" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_VICIOUS_BITE" />
+		</rules>
+	</element>
+
+    <element name="Photophores" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_AMPULLAE_OF_LORENZINI">
+		<h5>Photophores</h5>
+        <description>
+			<p>You have proficiency in the Investigation skill. In addition, you have advantage on Perception and Investigation checks.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Perception and Investigation checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Vicious Bite" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_VICIOUS_BITE">
+		<h5>Vicious Bite</h5>
+        <description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 piercing damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</p>
+		</description>
+		<sheet>
+			<description>Your vicious bite does {{vicious-bite:dice count}}d6+{{strength:modifier}} damage. This is a natural weapon attack and you use your Strength modifier for its attack rolls.</description>
+		</sheet>
+        <rules>
+            <stat name="vicious-bite:dice count" value="1" level="1" />
+            <stat name="vicious-bite:dice count" value="2" level="5" />
+            <stat name="vicious-bite:dice count" value="3" level="10" />
+            <stat name="vicious-bite:dice count" value="4" level="20" />
+        </rules>
+	</element>
+</elements>
