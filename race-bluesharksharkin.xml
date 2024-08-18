@@ -12,9 +12,9 @@
 		<supports>Sharkin</supports>
 		<description>
 			<p>Most common sharkin race.</p>
-			<p class="indent"><strong><em>Size.</em></strong> Blue Sharkin can grow to be between 5 to 6 feet tall and weigh up too 190 to 270 lbs. Your size is Medium.</p>
-			<p class="indent"><strong><em>Graceful Swimmer.</em></strong> Your swimming speed increases to 90 feet.</p>
-            <p class="indent"><strong><em>Vicious Bite.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 piercing damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</p>
+			<p class="indent"><strong><em>Size. </em></strong>Blue Sharkin can grow to be between 5 to 6 feet tall and weigh up too 190 to 270 lbs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Graceful Swimmer. </em></strong>Your swimming speed increases to 90 feet.</p>
+            <p class="indent"><strong><em>Vicious Bite. </em></strong>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 piercing damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</p>
         </description>
 		<sheet display="false" />
 		<rules>
@@ -30,7 +30,7 @@
 			<p>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 piercing damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</p>
 		</description>
 		<sheet>
-			<description>When you take the Attack action on your turn, you can replace one of your attacks with a vicious bite attack. This is a natural weapon attack with which you are proficient with and uses your Strength modifier for its attack rolls. This bite does 1d6 piercing damage, but grows to 2d6 at 5th level, 3d6 at 10th level, and 4d6 at 20th level.</description>
+			<description>Your vicious bite does {{vicious-bite:dice count}}d6+{{strength:modifier}} damage. This is a natural weapon attack and you use your Strength modifier for its attack rolls.</description>
 		</sheet>
         <rules>
             <stat name="vicious-bite:dice count" value="1" level="1" />
