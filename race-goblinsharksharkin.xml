@@ -19,7 +19,7 @@
         </description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Size" id="ID_SIZE_TINY" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
             <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
             <grant type="Racial Trait" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_AMPULLAE_OF_LORENZINI" />
