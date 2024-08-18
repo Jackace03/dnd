@@ -27,8 +27,8 @@
 		</rules>
 	</element>
 
-    <element name="Photophores" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_AMPULLAE_OF_LORENZINI">
-		<h5>Photophores</h5>
+    <element name="Ampullae of Lorenzini" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_SUB_RACE_GOBLINSHARK_SHARKIN_AMPULLAE_OF_LORENZINI">
+		<h5>Ampullae of Lorenzini</h5>
         <description>
 			<p>You have proficiency in the Investigation skill. In addition, you have advantage on Perception and Investigation checks.</p>
 		</description>
