@@ -2,15 +2,95 @@
 <elements>
 	<info>
 		<name>Sharkin</name>
+        <update version="0.1.0">
+			<file name="race-sharkin.xml" url="https://github.com/Jackace03/dnd/blob/main/race-sharkin.xml" />
+		</update>
 	</info>
-    <element name="Sharkin" type="Race" source="Homebrew" id="ID_WOTC_HOMEBREW_RACE_SHARKIN">
+    <element name="Sharkin" type="Race" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN">
         <description>
-            <p>In an era long before mortal reckoning, the Living Gate, the only bastion of safety against the nightmare creatures of the Far Realm, was torn apart in an unimaginable cosmic catastrophe.</p>
-            <p>You weren’t there, of course. It was well before your time.</p>
-            <p>Still, its shards make up your body. Its ancient thoughtforms shape your mind. And your life carries on its legacy.</p>
-            <p>Shardminds are a race of psionic crystal, constructed from the remnants of the last safeguard against the Far Realms. Strange and unearthly, shardminds are nevertheless guided by an unerring purpose: to cleanse the world of aberrations, and to make the multiverse once again safe from the madness that plagues it.</p>
-            <p>Do you quest after the secrets of the multiverse, hoping to reconstruct the Living Gate? Do you seek to become as powerful as you can, to be a better safeguard than the Gate ever was? Or do you hunt down any that threaten the realm, and those that stand in the way of the Gate’s reconstruction?</p>
-            <p>Your life is your own, and your destiny is clear as crystal.</p>
+            <p class="flavor">A man on a ship that is swaying and rocking in a storm, being drenched by rain and the salty sea water splashing onto the deck. The man holding on for dear life looks up onto the deck of the ship, thunder booms and lightning flashes. A shape appears on deck after a flash of lightning, a large hulking humanoid shaped shadow stands on deck. Lightning flashes again revealing, a large humanoid shaped creature with a tail and a SHARK head.</p>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Sharkin have humanoid bodies with a shark-like humanoid head, with fins on their back, arms, and legs. They have a shark tail, as well as a pair of gills which are located on their necks and webbed fingers. Unlike normal sharks, Sharkin skeletons consists of mainly bone instead of cartilage and most possess spiked elbows. They have five fingers, four toes, their eyes are different shades of yellow, orange, or red and the white of eyes are black. Their females have more feminine features, with human-like breasts and their gills reside on their sides right under their busts. Their bloodlines consist of any real shark species, as well as prehistoric species, such as the helicoprion or hybodus and even the megalodon. They can also be more animalistic looking, having closer to actual shark shaped heads, thick clawed fingers and more bulkier or grotesque physiques. The Half-Sharkin builds look exactly like human, or their other half race's builds. Though they still have the shark-like skin tone, as well as smaller then normal Sharkin fins on their arms, legs, and back. They do have shark fin tails, though they are not as large as a normal Sharkin's. They have five webbed fingers, five webbed toes, hair, gills on their neck (or sides under their busts for female), any color irises surrounded by black outer eye color and human male or female reproductive organs.</p>
+
+            <h4>HISTORY</h4>
+            <p>Sharkin were among the first intelligent species created by the gods, created before Elves and Dragons. They were in the beginning a basic shark species, who were transformed into a feral humanoid shark monster. They preyed upon large marine life and other surface or aquatic races. Sekolah, the shark god favored this species, so he bestowed upon them intelligence and a special gift. This gift was to store memories and genomes of other shark species, into their own genome including the ones that went extinct. This has caused the birth of many variations and subraces, as well as the height differences and abilities to sprout in these subraces.</p>
+            <p class="indent">Sekolah favored certain Sharkins who had done special deeds that pleased him, such as killing a great and powerful enemy or someone who went against Sekolah's will. They also could gain his favor by spreading his will, or protecting his monuments or places of worship. An honorable death in battle is the only way a Sharkin should die, this is also one of the ways a Sharkin would gain his favor. Sekolah comparative to how they pleased him, they would gain different such blessings. Extra strength in battle, enriched life, and even give them an extended lifespan after death, in some cases in the form of an undead.</p>
+            <p class="indent">Sharkin fought with and hunted any sort of creature that looked either powerful or threatening to them, including dinosaurs and dragons, making them top predators inside and outside of water. They are hated by most if not all surface dwelling races, making them enemy number one to almost everyone. They are even hated and despised by dragons, since the first time they killed an adult red dragon. This was not a one time problem, and has caused a bitter rivalry between the Dragons and Sharkins. They favored the taste of dragon flesh, from that day onward it became the largest badge of honor available for a Sharkin to hunt and kill a dragon. This then henceforth became a great and mighty challenge, for a member of the Sharkin royal family to hunt and bag a dragon, the bigger the better. The royal family loved the taste of dragons so much they made it their most favored treat among all other delicacies of their people. They often form hunting parties specifically to hunt and bag a dragon for any special occasion or festival. This made any and all dragon absolutely despise Sharkin, for they looked at them as prey and dragons being the vain creatures they are hate them. A dragon that sees a Sharkin will immediate become enraged and will do whatever it can to kill and devour it.</p>
+            <p class="indent">The Sharkin have a great and mighty city made of stone, coral, and metal that rests near the bottom of the seafloor called Sharanthis. The city was first built about a hundred years after the dawning of the Sharkin race, it's construction was orchestrated by the first true king of the Sharkins. His name was king Gargon Chasmjaw, he was the first to unite the Sharkin under one banner as well as create the baseline social structure and law system. The city is surrounded by a barrier of magic preventing water from entering the city, though the city has water current-like tubes or canals that travel all throughout the city. These tubes are like watery subways and watery elevators, that allow travel to every district in the city. The city is on a rising platform-like structure, consisting of 5 large circular platforms that each equal to 100 square miles along its top surface and the sides of the platform rise up to 25 miles tall. The top platform houses the royal family and other high class Sharkin families. The second platform houses the military forces and their facilities, this is also the layer that holds the store houses for their more expensive and rarest item storages. The third platform contains most of the shops and markets that exist in the whole city. The fourth platform holds almost all the temples, as well as almost all the inns and taverns in the city. The lowest platform of the city is filled with the common citizens housing as well as a few small shops and taverns. The outside of the city holds some ancient houses and other buildings, these have been fixed up with scrap materials to make them usable dwellings for the squalors and outcasts of the Sharkin.</p>
+
+            <h4>SOCIETY</h4>
+            <p>War and fighting are in the hearts of all sharkin, they live for the thrill of the hunt and battles against other strong creatures. They like to terrorize and crush the weak, proving their strength is the desire of most if not all Sharkin. They are a strong warring and battle heavy race, they are a strength based society, the strong rule above the weak is their anthem. They do have rules and laws, as well as several groups of gangs also known as pirates. They fight with one another inside or outside their undersea city, they fight for territory and just to prove whose better. Sharkin hunt and war with almost every other race, they rarely form treaties and only stray from war against races to their eyes are great warriors.</p>
+            <p class="indent">If a race offers dragon meat, skin, bones, or just any type of dragon imports they will make some kind of deal against attack or war. When it comes to food and drink, Sharkin can drink either salt water or regular water, as well they don't get dehydrated by drinking salt water. When it comes to food, anything with nutritional value will suffice, Sharkin aren't much for fine dining, though their peoples specialty dish is "Dragon Skin Soup". Sharkin are known to be horrendous eaters and have terrible table manners. Now Sharkin are considered carnivores, though they are actually omnivores, general their diet consists of almost any fish or meat and a very small amount of sea vegetables or fruits.</p>
+            <p class="indent">Sharkin for the most part are generally of average intelligence, they can be smarter than that though very rarely will you find a Sharkin genius. They aren't very magically inclined, most are warriors along with a very few religious sharkin most who run any form of religious temples to a god or philosophy are usually Hammerhead Sharkin though others can become clerics. Sharkin are among the best when it comes to forging and blacksmithing, because all blacksmiths of the Sharkin race know a special technique to prevent metal from rusting underwater. This is a very unique technique only known by the smiths of Sharanthis, making the metal they forge turn a dark-ish blue grey color to even darker blue grey or aqua green colors.</p>
+            <p class="indent">Now for all of the terrible actions, or stories told about Sharkins and their society they aren't all a hundred percent true. They aren't all terrible creatures, there are some kind or docile Sharkin races such as the Whale and Basking Sharkin races. There are others who despise the rule of the royal family and how their kingdom is run by them. They are the lower class of the Sharkin society, usually they are kind to those hated by the royal family and in turn there is a rebel force who plot against the royal family. They aren't the most organised group of rebels, though when fighting against a bunch of meat headed brutes I guess you don't need much intelligence or organisation. Their greatest escapade against the royal family committed by the rebels, it was merely some vandalism and one or two raids. The Sharkin rebels usually just help other Sharkin, by getting them food, helping with housing, or hiding out unwanted troublemakers and Half Breeds.</p>
+            <p class="indent">There is a low class of citizens in the Sharkin society, these Sharkin are a mix of either the weakest of the weak, the more bestial Sharkin known as the "Feral Kin" and also the lowest of all in their society the "Half Breeds". The Feral Kin are normal Sharkin, but with more shark-like features than the majority of the Sharkin race. They are usually either the punks and outcasts of their society, or they are the main cannonfoder soldiers for the Sharkin military forces. The Half Breeds are either of two types, the first is the easier to find which are mixed Sharkin bloodlines and the second which is the more rarer to find, are half Sharkin and half of another race. Half-Sharkin are quite rare due to the nature of how hateful and violent they are towards most if not all surface races, though they say love conquers all so its possible. Most Half-Sharkin if they live long enough to reach maturity, usually they are either kind and really accepting towards people, or they are mean and cruel to others. Now if they walk down the good path, the way they do it and why is because they don't wish to be the same as those who hurt them. Though if they decide to walk down the bad path, they usually do it with the mindset that they were hurt so they shouldn't be the only ones to be hurt. They are forced to live as total outcasts, from all societies on the surface and those down bellow in the ocean.</p>
+
+            <h4>SHARKIN NAMES</h4>
+            <p>Their Language is more of a simple and guttural language, with the majority of their names containing only one to two syllables. Male names are more guttural than the female names. Their last names are combinations of two simple words, like Black, Bite, Jagged, Jaw, Tooth, Rage and so forth</p>
+            <p>
+			<b>Male Names: </b>Bhulg, Draq, Dkon, Fingar, Fug, Garg, Glutch, Kargon, Nanaue
+			<br/>
+			<b>Female Names: </b>Auga, Eima, Fhien, Gillga, Marg, Oarie, Roara, Zaire
+			<br/>
+            </p>
+            <h4>SHARKIN TRAITS</h4>
+            <p>Your sharkin character has the following racial traits.</p>
+            <p>
+            <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1, and your Strength score increases by 2.<br/>
+            <span class="feature">Age.</span>Sharkin mature at the age of 15, and live to be around 360 years old.<br/>
+            <span class="feature">Alignment.</span>Usually any chaotic alignment, but there can be exceptions.<br/>
+            <span class="feature">Size.</span>Your size depends on your subrace.<br/>
+            <span class="feature">Speed.</span>Your walking speed is 30 feet, and you have a swimming speed of 60 feet.<br/>
+            <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
+            <span class="feature">Amphibious.</span>You can breath air and water.<br/>
+            <span class="feature">Fearless.</span>Everyone has a disadvantage on Intimidation checks on you.<br/>
+            <span class="feature">Languages.</span>You can read, write, and speak Common and Aquan.<br/>
+            </p>      
         </description>
+        <sheet display="false"/>
+        <setters>
+			<set name="names" type="male">Bhulg, Draq, Dkon, Fingar, Fug, Garg, Glutch, Kargon, Nanaue</set>
+			<set name="names" type="female">Auga, Eima, Fhien, Gillga, Marg, Oarie, Roara, Zaire</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d4+2">5'11"</set>
+			<set name="weight" modifier="2d4+3">160 lb.</set>
+		</setters>
+        <rules>
+            <stat name="constitution" value="2" />
+            <stat name="strength" value="1" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="speed:swim" value="60" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_AMPHIBIOUS" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_FEARLESS" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHARKIN_SUBRACE" />
+        </rules>
+    </element>
+    <element name="Amphibious" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN_AMPHIBIOUS">
+        <description>
+            <p>You can breath air and water.</p>
+        </description>
+        <sheet>
+            <description>You can breath air and water.</description>
+        </sheet>
+    </element>
+    <element name="Fearless" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN_FEARLESS">
+        <description>
+            <p>Everyone has a disadvantage on Intimidation checks on you.</p>
+        </description>
+        <sheet>
+            <description>Everyone has a disadvantage on Intimidation checks on you.</description>
+        </sheet>
+    </element>
+    <element name="Sharkin Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SHARKIN_SUBRACE">
+        <description>
+            <p>There are many different types of Sharkin. Select one of these subraces.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Sub Race" name="Sharkin Subrace" supports="Sharkin" />
+        </rules>
     </element>
 </elements>
