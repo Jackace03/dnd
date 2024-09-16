@@ -36,14 +36,14 @@
             <h4>SHARKIN TRAITS</h4>
             <p>Your sharkin character has the following racial traits.</p>
             <p>
-            <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1, and your Strength score increases by 2.<br/>
+            <span class="feature">Ability Score Increase.</span>Your Constitution score increases by 1, and your Strength score increases by 1.<br/>
             <span class="feature">Age.</span>Sharkin mature at the age of 15, and live to be around 360 years old.<br/>
             <span class="feature">Alignment.</span>Usually any chaotic alignment, but there can be exceptions.<br/>
-            <span class="feature">Size.</span>Your size depends on your subrace.<br/>
-            <span class="feature">Speed.</span>Your walking speed is 30 feet, and you have a swimming speed of 60 feet.<br/>
+            <span class="feature">Size.</span>Your size is medium.<br/>
+            <span class="feature">Speed.</span>Your walking speed is 30 feet, and you have a swimming speed of 30 feet.<br/>
             <span class="feature">Darkvision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br/>
             <span class="feature">Amphibious.</span>You can breath air and water.<br/>
-            <span class="feature">Fearless.</span>Everyone has a disadvantage on Intimidation checks on you.<br/>
+            <span class="feature">Otherworldly Perception.</span>You can sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving.<br/>
             <span class="feature">Languages.</span>You can read, write, and speak Common and Aquan.<br/>
             </p>      
         </description>
@@ -56,15 +56,18 @@
 			<set name="weight" modifier="2d4+3">160 lb.</set>
 		</setters>
         <rules>
-            <stat name="constitution" value="2" />
+            <stat name="constitution" value="1" />
             <stat name="strength" value="1" />
             <stat name="innate speed" value="30" bonus="base" />
-            <stat name="innate speed:swim" value="60" bonus="base" />
+            <stat name="innate speed:swim" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
             <grant type="Vision" id="ID_VISION_DARKVISION" />
             <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_AMPHIBIOUS" />
-            <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_FEARLESS" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_OTHERWORDLY_PERCEPTION" />
+            <grant type="Racial Trait" id="ID_HOMEBREW_RACE_SHARKIN_BITE" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHARKIN_MENACING" />
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SHARKIN_SUBRACE" />
         </rules>
     </element>
@@ -76,13 +79,32 @@
             <description>You can breath air and water.</description>
         </sheet>
     </element>
-    <element name="Fearless" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN_FEARLESS">
+    <element name="Otherworldly Perception" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN_OTHERWORDLY_PERCEPTION">
         <description>
-            <p>Everyone has a disadvantage on Intimidation checks on you.</p>
+            <p>You can sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving.</p>
         </description>
         <sheet>
-            <description>Everyone has a disadvantage on Intimidation checks on you.</description>
+            <description>You can sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving.</description>
         </sheet>
+    </element>
+    <element name="Bite" type="Racial Trait" source="Homebrew" id="ID_HOMEBREW_RACE_SHARKIN_BITE">
+        <description>
+            <p>Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description>Your fanged maw is a natural weapons, which you can use to make unarmed strikes. If you hit with it, you can deal 1d6 + {{strength:modifier}} piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Menacing" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SHARKIN_MENACING">
+        <description>
+            <p>You gain proficiency in the Intimidation skill.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in the Intimidation skill.</description>
+        </sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
     </element>
     <element name="Sharkin Subrace" type="Racial Trait" source="Homebrew" id="ID_RACIAL_TRAIT_SHARKIN_SUBRACE">
         <description>
@@ -93,4 +115,100 @@
             <select type="Sub Race" name="Sharkin Subrace" supports="Sharkin" />
         </rules>
     </element>
+    <element name="Great White" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_GREAT_WHITE_SHARKIN">
+		<supports>Sharkin</supports>
+		<description>
+            <p>The most well known Sharkin race.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Pounce.</em></strong> If you move at 15 ft. straight toward a creature then hit it with an unarmed strike on the same turn, you may attempt to shove the target prone as a bonus action.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" />
+            <grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_POUNCE" />
+		</rules>
+	</element>
+    <element name="Nimbleness" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_POUNCE">
+		<description>
+			<p>If you move at least 15 ft. straight toward a creature then hit it with an unarmed strike on the same turn, you may attempt to shove the target prone as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>If you move at least 15 ft. straight toward a creature then hit it with an unarmed strike on the same turn, you may attempt to shove the target prone as a bonus action.</description>
+		</sheet>
+	</element>
+    <element name="Mako" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_MAKO_SHARKIN">
+		<supports>Sharkin</supports>
+        <description>
+			<p>One of the fastest among Sharkin races.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+            <p class="indent"><strong><em>Nimbleness.</em></strong> You can move through the space of any creature that is of a size larger than yours.</p>
+            <p class="indent"><strong><em>Brave.</em></strong> You have advantage on saving throws against being frightened.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_NIMBLENESS" />
+			<grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_BRAVE" />
+		</rules>
+	</element>
+    <element name="Nimbleness" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_NIMBLENESS">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+	</element>
+    <element name="Brave" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_BRAVE">
+		<description>
+			<p>You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+	</element>
+    <element name="Hammerhead" type="Sub Race" source="Homebrew" id="ID_SUB_RACE_HAMMERHEAD_SHARKIN">
+		<supports>Sharkin</supports>
+        <description>
+			<p>One of the most diligent sharkin races.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Sharkin Resilience.</em></strong> You have advantage on saving throws against illusions and against being charmed or paralyzed.</p>
+            <p class="indent"><strong><em>Relentless Endurance.</em></strong> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
+            <p class="indent"><strong><em>Toughness.</em></strong> Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_SHARKIN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_RELENTLESS_ENDURANCE" />
+            <grant type="Racial Trait" id="ID_SUB_RACE_SHARKIN_TOUGHNESS" />
+		</rules>
+	</element>
+    <element name="Sharkin Resilience" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_SHARKIN_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws against illusions and against being charmed or paralyzed.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against illusions and against being charmed or paralyzed.</description>
+		</sheet>
+	</element>
+    <element name="Relentless Endurance" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_RELENTLESS_ENDURANCE">
+		<description>
+			<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
+    <element name="Toughness" type="Racial Trait" source="Homebrew" id="ID_SUB_RACE_SHARKIN_TOUGHNESS">
+		<description>
+			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</description>
+		</sheet>
+        <rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
 </elements>
